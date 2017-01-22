@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/food_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:padding="8dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/food_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/food_img"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="食物描述"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/keywords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_toRightOf="@id/food_img"
+        android:text="关键词"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
